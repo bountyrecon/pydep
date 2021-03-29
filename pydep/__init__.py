@@ -1,0 +1,3 @@
+from .hackerman import (
+  hack,
+)
